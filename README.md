@@ -1,0 +1,1 @@
+# SpartaHack-2022
