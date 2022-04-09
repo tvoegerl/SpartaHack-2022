@@ -10,15 +10,9 @@ def index():
         time_wanted = request.form.get("times")
         sessions_wanted = request.form.get("sessions")
         break_activity = request.form.get("break")
-        return "time wanted: " + time_wanted + ", sessions: " + sessions_wanted + ", activity: " + break_activity
+        return render_template('timer.html', time_wanted=time_wanted, sessions_wanted=sessions_wanted)
     else:
         return render_template('index.html')
-    #time_secs = int(time_wanted) * 60
-    #for i in range(0, time_secs):
-    #    mins = (time_secs-i)//60
-    #    secs = (time_secs-i)%60
-    #    return str(mins) + ":" + str(secs)
-    #    time.sleep(1)
     
 
 
