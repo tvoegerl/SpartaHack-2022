@@ -11,7 +11,7 @@ def index():
         for i in range(0, time_secs):
             mins = (time_secs-i)/60
             secs = (time_secs-i)%60
-            return "time remaining: " + str(mins) + ":" + str(secs)
+            return render_template('timer.html', mins = str(mins), secs = str(secs))
             time.sleep(1)
     else:
         return render_template('index.html')
