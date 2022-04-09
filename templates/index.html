@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<head>
+    <title>Pomodoro Timer</title>
+</head>
+
+
+{% block body %}
+<div class="content">
+    <h1>Pomodoro Timer</h1>
+
+    <form action="/", method="POST">
+        <label for="time">Choose an amount of time:</label>
+        <br>
+        <select id="times" name="times" placeholder="Choose an amount of time">
+            <option value=1>Demo</option>
+            <option value=15>15 Minutes On, 5 Minutes Off</option>
+            <option value=30>30 Minutes On, 5 Minutes Off</option>
+            <option value=45>45 Minutes On, 10 Minutes Off</option>
+            <option value=60>1 Hour On, 15 Minutes Off</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}

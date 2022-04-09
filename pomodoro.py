@@ -1,10 +1,22 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for, request
+import time
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
 def index():
-    return "Hello World"
+    if request.method == 'POST':
+        time_wanted = request.form.get("times")
+        time_secs = int(time_wanted) * 60
+        for i in range(0, time_secs):
+            mins = (time_secs-i)/60
+            secs = (time_secs-i)%60
+            return "time remaining: " + str(mins) + ":" + str(secs)
+            time.sleep(1)
+    else:
+        return render_template('index.html')
+    
+
 
 if __name__ == "__main__":
     app.run(debug = True)
