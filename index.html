@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\main.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body class="body">
+    <div class="container-fluid">
+        <div class="col-md-12 col-md-offset-1 text-center">
+            <h1 class="header">Pomodoro Timer</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1 text-center">
+                <label class="label" for="time">Choose an amount of time:</label>
+                <br>
+                <select class="dropdown" id="times" name="times">
+                    <option value=1>Demo</option>
+                    <option value=15>15 Minutes On, 5 Minutes Off</option>
+                    <option value=30>30 Minutes On, 5 Minutes Off</option>
+                    <option value=45>45 Minutes On, 10 Minutes Off</option>
+                    <option value=60>1 Hour On, 15 Minutes Off</option>
+                </select>
+            </div>
+            <div class="col-md-4 col-md-offset-1 text-center">
+                <label class="label" for="session">Choose a number of sessions:</label>
+                <br>
+                <select class="dropdown" id="sessions" name="sessions">
+                    <option value=1>One Session</option>
+                    <option value=2>Two Sessions</option>
+                    <option value=3>Three Sessions</option>
+                </select>
+            </div>
+            <div class="col-md-4 col-md-offset-1 text-center">
+                <label class="label" for="break">Choose an activity for your break:</label>
+                <br>
+                <select class="dropdown" id="break" name="break">
+                    <option value=self_care>Self Care</option>
+                    <option value=meditation>Meditation</option>
+                    <option value=journal_prompts>Journal Prompts</option>
+                    <option value=exercise>Exercise</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-md-offset-1 text-center"></div>
+                    <button class="button" type="submit">START</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+</body>
+</html>

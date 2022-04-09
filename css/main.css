@@ -1,0 +1,35 @@
+.body {
+    font-family: serif;
+}
+
+.header {
+    background-color: #577590;
+    padding: 40px;
+    font-family: serif;
+}
+
+.label {
+    font-size: 20px;
+}
+
+.dropdown {
+    width: 250px;
+    border-width: 0px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(to top, #E7F1E0, #F7FAF5 33%);
+}
+
+.button {
+    border-width: 0px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+    background-image: linear-gradient(to top, #FCE1D2, #FDEBE1 33%);
+}
+
+.row {
+    padding: 10px;
+}
