@@ -12,7 +12,7 @@ Meditative Pomodoro is a web application that promotes healthy studying habits b
 
 The technology used in this project consisted of HTML, CSS, and JavaScript. Initially were using Python Flask instead of Javascript but, given the time restraint, we found that connecting our front end and backend would be easier if we decided to use JavaScript instead. This did cause a bit of trouble as two of us on backend had to learn the language from scratch, and then find matching modules/functions that we had been using in Python. 
 
-In the process of completing the project there were some troubles that we faced outside of chosing a language. Compred the functions in Python that we could use for time, there wasn't an exact equivalent to the functions we were using before; thus, we had to use new one's we weren't as familiar with. This lead to us discovering that said functions have limitations, which led into a shift of our projects is presented. Initially the plan was to have the project runa max of 3 times, a minimum of 1, and it would be up to the user to decide. In either case, the code would stop to prevent the user from overworking themselves. Sadly we weren't able to implement this, but in its place were were able to tell the user how many rounds they have left. 
+In the process of completing the project there were some troubles that we faced outside of chosing a language. Compred the functions in Python that we could use for time, there wasn't an exact equivalent to the functions we were using before; thus, we had to use new one's we weren't as familiar with. This lead to us discovering that said functions have limitations, which led into a shift of our projects is presented. Initially the plan was to have the project run a max of 3 times, a minimum of 1, and it would be up to the user to decide. In either case, the code would stop to prevent the user from overworking themselves. Sadly we weren't able to implement this, but in its place were were able to tell the user how many rounds they have left. 
 
 Going forward it is our goal to be able to prevent the user from going over the reccommended rounds. It is also a goal to be able to shift the timers out for one another instead of having each timer side by side in order to run. 
 
@@ -25,12 +25,25 @@ Instructions
 
 Team Members
 - Varsha Rajagopalan
-    Github: https://github.com/varsha2040
+    - Github: https://github.com/varsha2040
 - Tatiana Voegerl
-    LinkedIn: https://www.linkedin.com/in/tatiana-voegerl/
+    - LinkedIn: https://www.linkedin.com/in/tatiana-voegerl/
 - Trinity Johnson  
-    LinkedIn: https://www.linkedin.com/in/trinity-johnson-a099aa179/
+    - LinkedIn: https://www.linkedin.com/in/trinity-johnson-a099aa179/
+
 Credits
 - freeCodeCamp
-- 
+    - https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+    - https://www.youtube.com/watch?v=PkZNo7MFNFg&t=7900s
 - w3schools
+    -https://www.w3schools.com/howto/howto_js_countdown.asp
+- Color Phycology 
+    - https://www.shiftelearning.com/blog/how-do-colors-influence-learning 
+- BootStarp
+    - https://getbootstrap.com/docs/5.0/getting-started/introduction/
+- Programming with Mosh
+    - https://www.youtube.com/watch?v=W6NZfCO5SIk
+- Journal Propmts
+    - https://psychcentral.com/blog/ready-set-journal-64-journaling-prompts-for-self-discovery#the-journal-prompts
+- Exercises 
+    - https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday    
