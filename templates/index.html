@@ -12,12 +12,29 @@
     <form action="/", method="POST">
         <label for="time">Choose an amount of time:</label>
         <br>
-        <select id="times" name="times" placeholder="Choose an amount of time">
+        <select id="times" name="times">
             <option value=1>Demo</option>
             <option value=15>15 Minutes On, 5 Minutes Off</option>
             <option value=30>30 Minutes On, 5 Minutes Off</option>
             <option value=45>45 Minutes On, 10 Minutes Off</option>
             <option value=60>1 Hour On, 15 Minutes Off</option>
+        </select>
+        <br>
+        <label for="session">Choose a number of sessions:</label>
+        <br>
+        <select id="sessions" name="sessions">
+            <option value=1>One Session</option>
+            <option value=2>Two Sessions</option>
+            <option value=3>Three Sessions</option>
+        </select>
+        <br>
+        <label for="break">Choose an activity for your break:</label>
+        <br>
+        <select id="break" name="break">
+            <option value=self_care>Self Care</option>
+            <option value=meditation>Meditation</option>
+            <option value=journal_prompts>Journal Prompts</option>
+            <option value=exercise>Exercise</option>
         </select>
         <button type="submit">Submit</button>
     </form>
