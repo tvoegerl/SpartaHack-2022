@@ -48,7 +48,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <button class="button" id="start_timer" onclick="countdown_timer(); decrement_sessions()" type="submit">START</button>
+                    <button class="button" id="start_timer" onclick="countdown_timer()" type="submit">START</button>
                 </div>
             </div>
             <div class="row">
@@ -98,12 +98,14 @@
     </div>
     
     <script>
-        function decrement_sessions() {
+        var count = 0;
+        function display_sessions_left() {
             var sessions = document.getElementById("sessions").value;
+            sessions -= count;
             document.getElementById("sessions_left").innerHTML = "You have " + sessions + " session(s) left.";
-            //document.getElementById("sessions").value = sessions-1;
         }
         function countdown_timer(){
+            display_sessions_left();
             var time_left = document.getElementById("times").value * 60;
             document.getElementById("time_remaining").innerHTML = "Time Remaining:";
             var x = setInterval(function() {
@@ -139,8 +141,50 @@
                     document.getElementById("start_timer").innerHTML = "START";
                     document.getElementById("break_start").innerHTML = "";
                     document.getElementById("show_prompt").innerHTML = "";
+                    count++;
+                    if (count == document.getElementById("sessions").value) {
+                        document.getElementById("sessions_left").innerHTML = "You have 0 session(s) left.";
+                    }
                 }
             }, 1000);
+        }
+        function get_prompt() {
+            m = Math.floor(Math.random()*5);
+            var p = document.getElementById("break").value;
+            const journal_prompt_array = ["What are your four goals for this week?",
+                "Describe something that you are looking forward to this week.",
+                "Write about a challenge that you have overcome.",
+                "Write a list of things that you are grateful to have.",
+                "Write down two quotes that make you laugh and why."];
+        
+            const exercise_array = ["Do 10 Jumping Jacks.", "Do 10 Squats.", "Do 10 Sit-Ups.", "Do 10 Russian Twists.", "Do 10 Push-Ups."];
+
+            const meditation_array = ["Breathe in for 6 seconds, hold and, breathe out for 6 seconds.",  
+                   "Close your eyes and focus on the sounds around you for 10 seconds.",
+                   "Try to describe how you are feeling in the moment.",
+                   "Name 5 things you can see in the room.",
+                   "Sit in a comfortable postion, close your eyes and try to observe your body sensations for 10 seconds."];
+        
+            const self_care_array = ["Make sure to keep yourself hydrated by drinking water!",
+                 "Rock out to some music!", "Eat a snack", "Stretch your legs!",
+                 "Take a page from a coloring book and colour!"];
+            
+            if (p == "self_care") {
+                prompt_1 = self_care_array[m];
+                document.getElementById("prompt").innerHTML = prompt_1;
+            }
+            else if (p == "meditation") {
+                prompt_2 = meditation_array[m];
+                document.getElementById("prompt").innerHTML = prompt_2;
+            }
+            else if(p == "journal_prompts") {
+                prompt_3 = journal_prompt_array[m];
+                document.getElementById("prompt").innerHTML = prompt_3;
+            }
+            else if(p == "exercise") {
+                prompt_4 = exercise_array[m];
+                document.getElementById("prompt").innerHTML = prompt_4;
+            }
         }
     </script>
 
