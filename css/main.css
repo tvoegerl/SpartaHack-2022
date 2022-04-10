@@ -23,6 +23,7 @@
 }
 
 .button {
+    width: 500px;
     border-width: 0px;
     border-radius: 15px;
     padding: 10px;
@@ -32,4 +33,12 @@
 
 .row {
     padding: 10px;
+}
+
+.timer_secs {
+    text-align: left;
+}
+
+.timer_mins {
+    text-align: right;
 }
