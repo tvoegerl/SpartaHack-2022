@@ -1,0 +1,61 @@
+<label class="label" for="break">Choose an activity for your break:</label>
+<br>
+<select class="dropdown" id="break" name="break">
+    <option value=self_care>Self Care</option>
+    <option value=meditation>Meditation</option>
+    <option value=journal_prompts>Journal Prompts</option>
+    <option value=exercise>Exercise</option>
+</select>
+<script>
+    function get_prompt(){
+        m = Math.floor(Math.random()*5)
+        var p = document.getElementById("break")
+        console.log(p)
+        journal_prompt_array = ["What are your four goals for this week?",
+                "Describe something that you are looking forward to this week.",
+                "Write about a challenge that you have overcome.",
+                "Write a list of things that you are grateful to have.",
+                "Write down two quotes that make you laugh and why."]
+        
+        exercise_array = ["Do 10 Jumping Jacks.", "Do 10 Squats.", "Do 10 Sit-Ups.", "Do 10 Russian Twists.", "Do 10 Push-Ups."]
+
+        meditation_array = ["Breathe in for 6 seconds, hold and, breathe out for 6 seconds.",  
+                   "Close your eyes and focus on the sounds around you for 10 seconds.",
+                   "Try to describe how you are feeling in the moment.",
+                   "Name 5 things you can see in the room.",
+                   "Sit in a comfortable postion, close your eyes and try to observe your body sensations for 10 seconds."]
+        
+        self_care_array = ["Make sure to keep yourself hydrated by drinking water!",
+                 "Rock out to some music!", "Eat a snack", "Stretch your legs!",
+                 "Take a page from a coloring book and colour!"]
+        if (p == "self care") {
+            for (var i=0; i< 5,i++;) {
+                prompt_1 = self_care_array[m]
+                console.log(prompt_1)
+            }
+        }
+        
+        elseif (p == "meditation") ;{
+            for (var i=0; i< 5,i++;) {
+                prompt_2 = meditation_array[m]
+                console.log(prompt_1)
+            }
+        }
+        elseif(p == "journal prompts") ;{
+            for(var i=0; i<5,i++;){
+                prompt_3 = journal_prompt_array[m]
+                console.log(prompt_3)
+            }
+        }
+        elseif(p == "exercise");{
+            for(var i = 0; i<5,i++;){
+                prompt_4 = exercise_array[m]
+                console.log(prompt_4)
+            }
+        }
+        
+
+         
+
+    }  
+</script>
